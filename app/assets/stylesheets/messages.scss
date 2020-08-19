@@ -1,0 +1,77 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "./color";
+
+.main {
+    height: calc(100vh - 80px);  // vhは「viewport height」の略で、viewport の高さ（ブラウザの高さ）に対する指定です。100vhで表示しているスマホやPCのウィンドウサイズの100%という意味になります 
+    .chat {
+        padding: 0 20px;
+        height: calc(100vh - 160px);
+        background-color: $back-color;
+        position: relative;
+        .chat2{
+            max-height:calc(100vh - 170px); 
+            overflow-y: auto;
+            width: 70%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .chat3 {
+            background-color: white;
+            overflow: auto;
+            margin: 5px
+        }
+        .chat4 {
+            float: left;
+            max-width: 80%;
+            padding: 10px;
+        }
+        .chat5 {
+            float: right;
+        }
+           .btn-square-slant {
+            padding: .7em 2em;
+            color: white;
+            background-color: $sub-color;
+            font-weight: bold;
+            text-decoration: none;
+            width: 100%;
+            display: block;
+           } 
+
+           li {
+               margin: 10px;
+           }
+    }
+    
+    .chat-form {
+        height: 80px;
+        padding: 20px;
+        background-color: $sub-color;
+        form {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            .input-text {
+                width: 80%;
+                margin: 0 30px;
+                height: 46px;
+                padding: 0 8px;
+                border-radius: 3px;
+            }
+            .button {
+                background-color: white;
+                border: none;
+                text-decoration: none;
+                margin-right: 2em;
+                padding: .7em 2em;
+                color: $sub-color;
+                font-weight: bold;
+                border-radius: 5px;
+            }
+        }
+    }
+}
